@@ -1,7 +1,9 @@
 {
   outputs = { self }: {
     templates = {
-      haskell = ./haskell;
+      haskell = {
+        path = ./haskell;
+      };
     };
   };
 }
