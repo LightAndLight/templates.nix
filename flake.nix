@@ -4,6 +4,9 @@
       haskell = {
         path = ./haskell;
       };
+      rust = {
+        path = ./rust;
+      };
     };
   };
 }
