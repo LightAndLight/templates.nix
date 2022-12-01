@@ -6,13 +6,13 @@
     flake-utils.lib.eachDefaultSystem (system:
       let 
         pkgs = import nixpkgs { inherit system; };
-        ghcVersion = "ghc924";
+        ghcVersion = "924";
       in {
         devShell = pkgs.mkShell {
           buildInputs = with pkgs; [
-            haskell.packages.${ghcVersion}.ghc
+            haskell.packages."ghc${ghcVersion}".ghc
             cabal-install
-            haskell-language-server
+            (haskell-language-server.override { supportedGhcVersions = [ ghcVersion ]; })
           ];
         };
       }
