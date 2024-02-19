@@ -6,7 +6,7 @@
     flake-utils.lib.eachDefaultSystem (system:
       let 
         pkgs = import nixpkgs { inherit system; };
-        ghcVersion = "963";
+        ghcVersion = "964";
       in {
         devShell = pkgs.mkShell {
           buildInputs = with pkgs; [
