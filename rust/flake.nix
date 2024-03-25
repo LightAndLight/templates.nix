@@ -14,7 +14,7 @@
         };
 
         rustVersion = "1.75.0";
-      
+
       in {
         devShell =
           pkgs.mkShell {
