@@ -13,7 +13,7 @@
           ];
         };
 
-        rustVersion = "1.81.0";
+        rustVersion = "1.86.0";
 
       in {
         devShell =
